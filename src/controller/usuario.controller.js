@@ -1,5 +1,6 @@
 const Usuario = require("./../model/usuario");
 const usuarioValidator = require("./validator/usuario.validator");
+
 const getUsuarios = async (req, res) => {
   const usuarioS = await Usuario.find();
   res.send(usuarioS);
